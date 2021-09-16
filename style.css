@@ -1,0 +1,210 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+ul{
+    list-style: none;
+}
+
+a{
+    text-decoration: none;
+}
+
+#top-menu{
+    width: 1170px;
+    background-color: #303952;
+    margin: 0 auto;
+}
+
+.menu{
+    width: 1170px;
+    height: 80px;
+    margin: 0 auto;
+    display: flex;
+}
+
+.menu .menu-logo{
+    width: 200px;
+    height: 80px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.menu .menu-list{
+    width: 970px;
+    height: 80px;
+}
+
+.menu .menu-list ul{
+    display: flex;
+    justify-content: end;
+  line-height: 80px;
+ 
+}
+
+.menu .menu-list ul li{
+   /* margin-left: 30px; */
+   /* background-color: #778beb; */
+}
+
+.menu .menu-list ul li a{
+    color: #ecf0f1;
+    padding: 0 30px 0 30px;
+    /* background-color: #596275; */
+    display: block;
+}
+
+.menu .menu-list ul li:nth-child(2){
+    padding: 0 33px;
+}
+
+.menu .menu-list ul li a:hover{
+    color: #f7d794;
+    background-color: #596275;
+    transition: all linear 0.5s;
+}
+
+/* dropdown menu start */
+
+.menu-list ul li{
+    position: relative;
+}
+
+.menu-list ul li .dropdown-menu ul{
+    position: absolute;
+    width: 250px;
+    display: flex;
+    flex-direction: column;
+    visibility: hidden;
+}
+
+.menu-list ul li:hover .dropdown-menu ul{
+    visibility: visible;
+}
+
+.dropdown-menu ul li{
+    position: relative;
+}
+
+.dropdown-menu ul li .dm-menu ul{
+    position: absolute;
+    left: 250px;
+    visibility: hidden;
+}
+
+.dropdown-menu ul li:hover .dm-menu ul{
+    visibility: visible;
+}
+
+/* dropdown menu end */
+
+
+/* banner start */
+
+#banner{
+    width: 1170px;
+    height: 700px;
+    margin: 0 auto;
+    background: url(../All-Images/Heider-bg.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.banner-txt{
+    width: 1170px;
+    margin: 0 auto;
+    text-align: center;
+    color: #ecf0f1;
+}
+
+.banner-txt h1{
+    padding: 200px 100px 50px 100px;
+    font-size: 60px;
+    text-transform: uppercase;
+
+}
+.banner-txt p{
+    padding: 0 150px 50px 150px;
+    font-size: 20px;
+}
+
+.banner-txt .btn{
+    text-align: center;
+}
+.btn a{
+    font-size: 15px;
+    font-weight: 600;
+    color: #ecf0f1;
+    background-color: #2ecc71;
+    text-transform: uppercase;
+    border-radius: 5px;
+    padding: 15px 35px;
+    position: relative;
+    z-index: 1;
+}
+
+/* .btn a:hover{
+    background: #3498db;
+    color: #dff9fb;
+    transition: all linear 0.5s;
+} */
+
+.btn a::after{
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 0;
+    height: 100%;
+    background-color: #130f40;
+    border-radius: 5px;
+    transition: all linear 0.5s;
+    /* z-index: -1; */
+}
+
+.btn a:hover::after{
+    width: 100%;
+}
+
+
+#service{
+    height: 450px;
+    width: 100%;
+}
+#service .service-bg{
+    width: 1170px;
+    height: 450px;
+   /* background-color: #686de0; */
+   margin: 0 auto;
+   display: flex;
+   flex-wrap: wrap;
+   justify-content: space-between;
+   align-content: space-between;
+}
+
+.service-bg .service-item{
+    height: 200px;
+    width: 370px;
+    /* background-color: #95afc0; */
+    text-align: center;
+    border-right: 1px solid #d7dadb;
+}
+.service-item img{
+    margin-top: 15px;
+}
+.service-item h3{
+    margin-top: 10px;
+}
+.service-item p{
+    margin-top: 10px;
+    padding: 0 10px 0 10px;
+}
+hr{
+    width: 1170px;
+    margin: 0 auto;
+    color: #d7dadb;
+}
+
